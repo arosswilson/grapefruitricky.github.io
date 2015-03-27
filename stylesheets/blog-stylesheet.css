@@ -1,0 +1,95 @@
+body {
+  border:0px;
+  margin-right:100px;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: noteworthy;
+  background: url(../imgs/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+
+
+#topfixed {
+  background-color:#0ed6f4;
+  position: fixed;
+  min-width: 100%;
+  height: 60px;
+  right: 0px;
+  z-index: 9999;
+}
+
+.social {
+  height:40px;
+  width: 40px;
+  border-radius: 30px;
+  position: fixed;
+  top: 10px;
+}
+#twitter {
+  left: 1em;
+}
+
+#linkedin {
+  left: 3.5em;
+}
+
+#mail {
+  left:6em;
+}
+
+#reckons {
+  width: 100%;
+  height: 300px;
+  position:relative;
+  top: 60px;
+  border-radius: 100px;
+}
+
+.nav {
+  position:relative;
+  top:80px;
+  left: 41%;
+  margin-left:;
+  margin-right:;
+  background-color:#cd1b4d;
+  color:#0ed6f4;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 15px;
+  border-color: #0ed6f4;
+  border:2px;
+
+}
+
+
+
+section {
+  border: 2px solid #cd1b4d;
+
+}
+
+#post {
+  float: left;
+  width:68%;
+}
+
+.maintext {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#blogs {
+  float: right;
+  width: 28%;
+}
+
+#archive {
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+

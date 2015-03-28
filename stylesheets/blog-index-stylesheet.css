@@ -69,6 +69,11 @@ section {
   border: 2px solid #cd1b4d;
 }
 
+p img {
+  border:2px solid black;
+  max-height: 300px;
+  max-width: 300px;
+}
 
 #blogs {
   position:relative;

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ross reckons</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body id="background" >
+  <div id="topfixed">
+   <a href="https://twitter.com/rosswilsoniii"><img id="twitter" class="social" src="../imgs/twitter.png" alt="twitter"></a>
+   <a href="https://www.linkedin.com/pub/ross-wilson/35/306/b38"><img id="linkedin" class="social" src="../imgs/linkedin.png" alt="linkedin"></a>
+   <a href="mailto:arthur.ross.wilson@gmail.com"><img id="mail" class="social" src="../imgs/mail.png" alt="email"></a>
+  </div>
+  <div id="divone">
+   <img id="reckons" src="../imgs/header.jpg" alt="ross recksons">
+
+    <a class="nav" href="../index.html">home</a>
+    <a class="nav" href="#">about me</a>
+    <a class="nav" href="#">projects</a>
+
+  </div>
+  <br><br><br><br><br><br><br>
+
+  <section id="post">
+  <h1 class="maintext"> <!--Post Title --> </h1>
+  <h2 class="maintext"> <!-- The subtitle, if you want it --> </h2>
+  <h4 class="maintext"> <!-- Today's Date --> </h4>
+
+
+    <p class="maintext">
+      Today I want to talk to you about the different between the display:inline and display: inline-block elements in CSS.<br>
+
+
+First, to understand this, it's important to understand the different between an inline element and a block element.  In CSS most elements defualt to being one or the other.  An example of a block element is 'div', while inline elements are things like 'a' (the anchor or link element), 'b' (the bold element), or 'em' (the emphasis or italics element).  When something is inline then it's typically used within text on a page.  Given the examples, this makes sense; you would want your links or bolded words to appear inline witht he surrouding text. Here's a visual example of what I mean:<br>
+<img src="../imgs/site1.jpg"><br>
+You can see that my link and my bolded text are staying inline with the rest of the text.  I'm now going to shade these with a background color so you can really see the space that these elements are taking up:<br>
+<img src="../imgs/site2.jpg"><img src="../imgs/css2.jpg"><br>
+The background color gives us a pretty good idea of how much space the element is taking up.  As we can see, these inline elements just take up the space of the word. By default, CSS won't let us adjust the height or width of inline elements: <br>
+<img src="../imgs/site3.jpg"><img src="../imgs/css3.jpg"><br>
+Again, this makes sense because we typically want these inline items to be grouped with our text, but there could be cases when we want to space them out.<br>
+Block elements differ because they allow you to adjust the height:<br>
+<img src="../imgs/site4.jpg"><img src="../imgs/css4.jpg"><br>
+<br>
+
+Now that we understand the difference between inline and block elements, we can move forward. The next thing that's important to know is that CSS allows you to change whether an element is inline or block (or inline-block) with the 'display' property.  So, if I wanted to adjust the width and height of my link, I could:<br>
+<img src="../imgs/site5.jpg"><img src="../imgs/css5.jpg"><br>
+As you see, this brings my link to a different line.  If I wanted to, I could keep it on the same line with the 'display: inline-block' css property:<br>
+<img src="../imgs/site6.jpg"><img src="../imgs/css6.jpg"><br>
+This is often used if people want to make grids of things on a site. You could use it to put multiple blocks next to each other and they page neatly when they hit the edge of the body or parent element.<br>
+
+I hope you enjoyed this, and keep an eye out for more technical tips!
+
+    </p>
+  </section>
+
+  <section id="blogs">
+   <p id="archive"> Archive</p>
+   <ul>
+    <li><a href="#">blog post 1</a></li>
+    <li><a href="#">blog post 2</a></li>
+   </ul>
+  </section>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+  background-image: url("../imgs/surf.jpg");
+
+  background-size: cover;
+  bakground-repeat:no-repeat;
+  z-index: 1;
+  margin-top: 120px;
+  margin-left: 120px;
+  color:#302a2e;
+  font-family: 'Dekko', cursive;
+
+}
+#opacity {
+  background-color: lightgrey;
+  opacity: 0.5;
+  position: absolute;
+  background-size: cover;
+  z-index: 2;
+}
+
+h1 {
+
+  z-index: 9999;
+}
+
+#header {
+  border: 2px solid black;
+  background-color: rgba(211,211,211,0.7);
+  border-radius: 50px;
+  width:25%;
+  position:absolute;
+  top:20px;
+  left:40%;
+  text-align: center;
+  z-index: 3;
+
+
+}
+
+#rightblock {
+  position: absolute;
+  left: 120px;
+  top:30%;
+  width:18%;
+  border: 2px solid black;
+  background-color: rgba(211,211,211,0.7);
+  border-radius: 50px;
+  z-index: 4;
+}
+a:link {
+  color:#302a2e;
+  text-decoration: none;
+}
+
+.social {
+  height:40px;
+  width: 40px;
+  border-radius: 30px;
+  left:30px;
+  position:relative;
+  z-index: 5;
+}
+
+#main {
+
+  width:50%;
+  border: 2px solid black;
+  background-color: rgba(211,211,211,0.7);
+  border-radius: 50px;
+  position: absolute;
+  top:30%;
+  left:500px;
+  z-index: 6;
+  padding-right: 20px;
+  padding-left: 20px;
+}

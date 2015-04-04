@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ross reckons</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body id="background" >
+  <div id="topfixed">
+   <a href="https://twitter.com/rosswilsoniii"><img id="twitter" class="social" src="../imgs/twitter.png" alt="twitter"></a>
+   <a href="https://www.linkedin.com/pub/ross-wilson/35/306/b38"><img id="linkedin" class="social" src="../imgs/linkedin.png" alt="linkedin"></a>
+   <a href="mailto:arthur.ross.wilson@gmail.com"><img id="mail" class="social" src="../imgs/mail.png" alt="email"></a>
+  </div>
+  <div id="divone">
+   <img id="reckons" src="../imgs/header.jpg" alt="ross recksons">
+
+    <a class="nav" href="../index.html">home</a>
+    <a class="nav" href="#">about me</a>
+    <a class="nav" href="#">projects</a>
+
+  </div>
+  <br><br><br><br><br><br><br>
+
+  <section id="post">
+  <h1 class="maintext"> Arrays and Hashes </h1>
+  <h2 class="maintext">What are they?! What do I do with them?!</h2>
+  <h4 class="maintext"> April 3, 2015</h4>
+
+
+    <p class="maintext">
+      Today I want to take a little time to talk about Arrays and Hashes, what they are, and how they're different.  We got a lot of exposure to Arrays and Hashes this week and they are interesting, powerful tools.
+
+      <p class="maintext"><h2  class="maintext">Arrays</h2></p>
+      <p class="maintext">
+        An array is simply a list of objects. You can add/remove objects to it and call on the list of objects when you want.  For example, you could have an array that looks like this: <img src = "../imgs/arrayhash1.jpg">
+        This is a list that has string and integer objects. It's nice to know that Arrays can hold both of these kinds of objects (it can even hold other arrays!), but typically Arrays are used to list things that go together.  For example: <img src = "../imgs/arrayhash3.jpg"> or <img src = "../imgs/arrayhash2.jpg">. These lists go together because you can quickly see that they are a list of ages and a list of names respectively.
+      </p>
+        <p class="maintext">Another important thing to know about arrays is how Ruby indexes them. It counts each object starting with 0.  This means the first object is at 0 (I'm trying to refer to it as the 'zeroth' to really grasp this concept), the second object would be 1, and the last one is the number of objects in your array minus 1. To illustrate this, let's use our names example from above. If I were to call each name seperately, it would look like this: <img src = "../imgs/arrayhash4.jpg">.  Here I'm using names[index] and Ruby is returning the value in that index.  When I call names[0], Ross is being returned.  To call the last value I use the index number 3 - in this case names[3] - and Brian is returned.
+        </p>
+        <p class="maintext"><h2  class="maintext">Hashes</h2></p>
+        <p  class="maintext">
+          Hashes are also collections of data, but they consist of key-value pairs. Instead of being indexed by a number like arrays, each value has an associated key that you use to call it. The nice thing is here is you get to determine what the keys are! Ok, let's look at an example; let's say that now instead of storing just ages, I want to know the age of my (only) 4 friends: <img src = "../imgs/arrayhash5.jpg">. Here we have the keys, which is a list of my friends names and each corresponding value is that friend's age. Now if I want to look up JD's age, I can easily: <img src = "../imgs/arrayhash6.jpg">
+          </p>
+          <p class="maintext">
+           As you can see, both are collections of data, but with Hashes you're assigning the value to the key, so values are easier to look up (like we did with JD's age). Arrays are nice because they're simple, but if I wanted to call on a certain value, I would have to know exactly where in the index that value is.
+           </p>
+
+           <p class="maintext"> I hope this was helpful, but if you have any feedback please use those links in the top-left corner to let me know! </p>
+
+
+    </p>
+  </section>
+
+  <section id="blogs">
+   <p id="archive"> Archive</p>
+   <ul>
+    <li><a href="t1-git-blog.html">Git It?!</a></li>
+    <li><a href="c1-chefs-kitchen.html">Hungry</a></li>
+    <li><a href="t2-css-design.html">Inline vs. Inline-Block</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+    <li><a href="c3_thinking-style.html">What Am I Thinking?</a></li>
+   </ul>
+  </section>
+</body>
+</html>

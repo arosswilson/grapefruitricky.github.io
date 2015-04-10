@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ross reckons</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body id="background" >
+  <div id="topfixed">
+    <div>
+    <h1>Ross Reckons</h1>
+  </div>
+   <a href="https://twitter.com/rosswilsoniii"><img id="twitter" class="social" src="../imgs/twitter.png" alt="twitter"></a>
+   <a href="https://www.linkedin.com/pub/ross-wilson/35/306/b38"><img id="linkedin" class="social" src="../imgs/linkedin.png" alt="linkedin"></a>
+   <a href="mailto:arthur.ross.wilson@gmail.com"><img id="mail" class="social" src="../imgs/mail.png" alt="email"></a>
+  </div>
+  <div id="divone">
+   <img id="reckons" src="../imgs/surf1.jpg" alt="ross recksons">
+
+
+    <a class="nav" href="../index.html">home</a>
+    <a class="nav" href="#">about me</a>
+    <a class="nav" href="#">projects</a>
+
+  </div>
+  <br><br><br><br><br><br><br>
+
+  <section id="post">
+  <h1 class="maintext">Droppin' Knowledge on the Cycle Method</h1>
+  <h2 class="maintext">A close look at the enumerators and the cycle method</h2>
+  <h4 class="maintext">April 9, 2015</h4>
+
+
+    <p class="maintext">
+      Today I'm going to drop some knowledge on you about the cycle method in Ruby. First of all it's worth mentioning that that this is a method provided by the enumerable module. The enumerable module? That word enumerable sure is tossed around a lot when you're using ruby. The general definition of enumerable (accoring to <a href ="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=enumerable"> that wild google dictionary thing</a>) is something that's "able to be counted by a one-to-one correspondence with positive integers." For today's intents and purposes let's keep things simple and say it's just something that's countable. This means that enumerable methods are applied to things like hashes, arrays, and ranges (if you're scratching your head about what hashes and arrays are then you must have forgotten to read <a href="t3-arrays-hashes.html">my last post</a>). </p>
+      <p class="maintext">
+        Now that that is settled let's dig into the cycle method. Generally, the cycle method will do exactly what you expect - cycle through an array, hash, or range (or any other enumerable). Let's take a look. Here is my array (cleverly named "my_array") with a series of integers:
+        <img src="../imgs/cycle1.jpg" /> <br>The cycle method takes and argument of how many times it should cycle through your enumerable and a block for you to specify what it should do as it's cycling. For now, I'm just going to have it cycle through twice and print each digit: <img src="../imgs/cycle2.jpg" /> <br>
+        One thing to be careful about here is if you don't add in an argument for how many times cycle should run or if you don't have a condition that would break the cycle, it will run <a href="https://www.youtube.com/watch?v=H-Q7b-vHY3Q">FOREVER</a>... or until you manually quit the process, but it's still something you want to avoid.
+      </p>
+      <p class="maintext">
+        OK, OK, I know what you're thinking. This cycle things seems pretty straightforward, and if you compare it to some of the other enumerable methods like each or inject, it doesn't seem as useful - BUT YOU'RE WRONG. Actually, you're not wrong (at least as I understand it now), but there are some cool things you can do with it! Let's set our array with the cycle method equal to a variable (I'm going to use all of my remaining imagination and call that variable "variable"): <img src="../imgs/cycle3.jpg" />. When we do that, ruby returns "<Enumerator: [1, 3, 4, 6, 5, 2, 7]:cycle>." We can now use some cool methods on our new variable, "variable." If "next" is called on "variable" it will produce the next value in the array (in this case, the first):<img src="../imgs/cycle4.jpg" />.<br>  Guess what happens when I do that again. It gives me the next value in the array! <img src="../imgs/cycle5.jpg">. <br> This could be applicable if you have a series that you want to iterate through with more control and not all at once. Let's say our array wasn't a random set of numbers but was actually the days of the week, we could use this to sequence through the days of the week when we need to. Also, if you forget what comes next but don't actually want to move to that value, you can use the peek method. Let's see this in action! First I'll call the array, to refresh your memory as to what the values are, then call peek, then next, then peek again. Here's what happens: <img src="../imgs/cycle6.jpg"> </p>
+      <p class="maintext">
+        I hope this was a fun little lesson. I certainly enjoyed it! If you have any feedback, use those links in the top left corner. I want to hear what you think!
+    </p>
+  </section>
+
+  <section id="blogs">
+   <p id="archive"> Archive</p>
+   <ul>
+    <li><a href="t1-git-blog.html">Git It?!</a></li>
+    <li><a href="c1-chefs-kitchen.html">Hungry</a></li>
+    <li><a href="t2-css-design.html">Inline vs. Inline-Block</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+    <li><a href="c3_thinking-style.html">What Am I Thinking?</a></li>
+    <li><a href="t4-enumerable-methods.html">Droppin' Knowledge on the Cycle Method</a></li>
+   </ul>
+  </section>
+</body>
+</html>

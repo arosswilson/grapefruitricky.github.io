@@ -26,11 +26,10 @@ h1 {
 #header {
   border: 2px solid black;
   background-color: rgba(211,211,211,0.7);
-  border-radius: 50px;
-  width:25%;
+  width:18%;
   position:absolute;
   top:20px;
-  left:40%;
+  left:120px;
   text-align: center;
   z-index: 3;
 
@@ -40,11 +39,10 @@ h1 {
 #rightblock {
   position: absolute;
   left: 120px;
-  top:30%;
+  top:40%;
   width:18%;
   border: 2px solid black;
   background-color: rgba(211,211,211,0.7);
-  border-radius: 50px;
   z-index: 4;
 }
 a:link {
@@ -55,7 +53,6 @@ a:link {
 .social {
   height:40px;
   width: 40px;
-  border-radius: 30px;
   left:30px;
   position:relative;
   z-index: 5;
@@ -66,10 +63,9 @@ a:link {
   width:50%;
   border: 2px solid black;
   background-color: rgba(211,211,211,0.7);
-  border-radius: 50px;
   position: absolute;
-  top:30%;
-  left:500px;
+  top:40%;
+  left:450px;
   z-index: 6;
   padding-right: 20px;
   padding-left: 20px;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ross reckons</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body id="background" >
+  <div id="topfixed">
+    <div>
+    <h1>Ross Reckons</h1>
+  </div>
+   <a href="https://twitter.com/rosswilsoniii"><img id="twitter" class="social" src="../imgs/twitter.png" alt="twitter"></a>
+   <a href="https://www.linkedin.com/pub/ross-wilson/35/306/b38"><img id="linkedin" class="social" src="../imgs/linkedin.png" alt="linkedin"></a>
+   <a href="mailto:arthur.ross.wilson@gmail.com"><img id="mail" class="social" src="../imgs/mail.png" alt="email"></a>
+  </div>
+  <div id="divone">
+   <img id="reckons" src="../imgs/surf1.jpg" alt="ross recksons">
+
+
+    <a class="nav" href="../index.html">home</a>
+    <a class="nav" href="#">about me</a>
+    <a class="nav" href="#">projects</a>
+
+  </div>
+  <br><br><br><br><br><br><br>
+
+  <section id="post">
+  <h1 class="maintext">Variables</h1>
+  <h2 class="maintext">The Different Variables of Ruby Explained</h2>
+  <h4 class="maintext">April 26, 2015</h4>
+
+
+    <p class="maintext">
+      Hey all, today I want to go over variable scope and the fun variables you'll see in Ruby.<br>
+
+      First of all, variable scope is a common term and really what it is referring to is when a variable is able to be accessed. What determine whether a variable is able to accessed depends on what kind of variable it is and where it's created.  To illustrate this, I'll go through the 5 kinds of variables and how they are different.
+      <br>
+      We'll start with a local variable. These we use often inside methods or blocks, and they can only be accessed within those methods or blocks. Take a look:<br>
+      <img src="../imgs/concepts1.jpg"><br>
+      Here I created the variable "variable" inside the "new method". When I call the new method, Ruby can read the variable as 4, but when I try to call the variable outside the method, I get the "undefined local variable or method" error.
+      <br>
+      Let's take a look at the instance variable. These always begin with an at sign: @. These are defined within a class and every object created from that class (instance of that class) can have it's own value for that variable. That means that you can only access these variables with objects that are created from the class that has the instance variable defined. Let's take a look:<br>
+      <img src="../imgs/concepts2.jpg"><br>
+      I created a new class called employee with "@emp_id" and "@emp_name" as my instance varibles. I created Bob which is an instance of that class, so when I run the class method "display details" (which references the instance variables), it knows what to do. When I create a variable randy, it doesn't recognize the method or variables in the Employee class because it's part of the string class.<br>
+      Next there are class variables which are set for each class. Let's say that I wanted to make a car class and I knew that all the cars/instances of that class would have four wheels, then I might make a class variable of wheels and set it equal to four. You can quickly spot class variables because they have two at signs infront of them. For example "@@wheels".<br>
+      Global variables are next. These begin with dollar signs and they have a global scope. This means that they can be accessed anywhere. These are used pretty rarely compared to instance variables, class variables, or local variables because they tend to make object oriented programs less flexible. Nonetheless, they are good to know about if you're in a pinch.<br>
+      Finally, we have constants. These also have a global scope, but they aren't meant to be changed or altered by your program - just referenced. A lot of times you store data that you'll reference in a constant. They're easy to spot because their names are in UPPERCASE.<br>
+      I hope you enjoyed today's technical blog - let me know if you have any feedback!
+
+
+
+    </p>
+  </section>
+
+  <section id="blogs">
+   <p id="archive"> Archive</p>
+   <ul>
+    <li><a href="t1-git-blog.html">Git It?!</a></li>
+    <li><a href="c1-chefs-kitchen.html">Hungry</a></li>
+    <li><a href="t2-css-design.html">Inline vs. Inline-Block</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+    <li><a href="c3_thinking-style.html">What Am I Thinking?</a></li>
+    <li><a href="t4-enumerable-methods.html">Droppin' Knowledge on the Cycle Method</a></li>
+    <li><a href="c4-tech-issues.html">Healthcare Interoperability</a></li>
+    <li><a href="t5-ruby-classes.html">A Look at Classes in Ruby</li>
+    <li><a href="c5-feedback.html">Oh, no! Feedback!</li>
+   </ul>
+  </section>
+</body>
+</html>

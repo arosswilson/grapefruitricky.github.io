@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ross reckons</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body id="background" >
+  <div id="topfixed">
+    <div>
+    <h1>Ross Reckons</h1>
+  </div>
+   <a href="https://twitter.com/rosswilsoniii"><img id="twitter" class="social" src="../imgs/twitter.png" alt="twitter"></a>
+   <a href="https://www.linkedin.com/pub/ross-wilson/35/306/b38"><img id="linkedin" class="social" src="../imgs/linkedin.png" alt="linkedin"></a>
+   <a href="mailto:arthur.ross.wilson@gmail.com"><img id="mail" class="social" src="../imgs/mail.png" alt="email"></a>
+  </div>
+  <div id="divone">
+   <img id="reckons" src="../imgs/surf1.jpg" alt="ross recksons">
+
+
+    <a class="nav" href="../index.html">home</a>
+    <a class="nav" href="#">about me</a>
+    <a class="nav" href="#">projects</a>
+
+  </div>
+  <br><br><br><br><br><br><br>
+
+  <section id="post">
+  <h1 class="maintext">Loops</h1>
+  <h2 class="maintext">A look at the difference between loops in JavaScript and Ruby</h2>
+  <h4 class="maintext">May 3, 2015</h4>
+
+
+    <p class="maintext">
+     This week we focused on JavaScript, and it was pretty wild to switch languages all fo the sudden. While I'm starting to get comfortable with the JavaScript syntax, it's challenging to switch between the languages. That said, I'd like to take time to discuss the differences in loops between JavaScript and Ruby. I'll focus on the the 'while' and 'for' loops.<br>
+
+     I'm going to start with the while loops since they're similar. Here is what a while looks like in JavaScript:<br>
+     <img src="../imgs/javascript1.jpg"><br>
+     Here is the same loop in Ruby:<br>
+     <img src="../imgs/javascript2.jpg"><br>
+     We can see that both of these loops look pretty similar. For both, after while, we define a condition for how long the loop should be run, then set up a block for what should actually happen in each loop. Here, we're just printing out each element in the array. It's also clear to see that Ruby is living up to it's 'easy syntax' reputation when compared to javascript, because it looks a lot more like English than the JavaScript loop does.<br>
+
+     Let's move on to the 'for' loop in Javascript:<br>
+     <img src="../imgs/javascript3.jpg"><br>
+     In Ruby, we would the enumerable 'each' method to accomplish the same thing:<br>
+     <img src="../imgs/javascript4.jpg"><br>
+     You'll see that in the JavaScript for loop, the condition has a lot of parameters. We start by defining a variable ('i') and saying that as long as 'i' is less than the number of elements in the array (myArray.length) then it should run the code block (the part in the curly brackets). After it runs once, the last parameter is evaluated ('i++'), here we are adding 1 to 'i'. While this is a lot of typing (especially if you compare it to the Ruby equivalent) you have a lot of control over exactly how often you want the loop to iterate.  In Ruby, we use the each method to succinctly create the loop. This was nice because it's the perfect method for what we want, but sometimes, the perfect method is hard to find. And that to me has been the big trade-off between Ruby and JavaScript: JavaScript has a lot of manual work, but a short amount of methods, while Ruby is more succinct, but you have to search through a lot of methods to find the one that you need.
+
+
+
+    </p>
+  </section>
+
+  <section id="blogs">
+   <p id="archive"> Archive</p>
+   <ul>
+    <li><a href="t1-git-blog.html">Git It?!</a></li>
+    <li><a href="c1-chefs-kitchen.html">Hungry</a></li>
+    <li><a href="t2-css-design.html">Inline vs. Inline-Block</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+    <li><a href="c3_thinking-style.html">What Am I Thinking?</a></li>
+    <li><a href="t4-enumerable-methods.html">Droppin' Knowledge on the Cycle Method</a></li>
+    <li><a href="c4-tech-issues.html">Healthcare Interoperability</a></li>
+    <li><a href="t5-ruby-classes.html">A Look at Classes in Ruby</li>
+    <li><a href="c5-feedback.html">Oh, no! Feedback!</li>
+   </ul>
+  </section>
+</body>
+</html>

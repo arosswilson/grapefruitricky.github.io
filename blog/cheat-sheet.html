@@ -29,12 +29,13 @@
       <p>.Lazy is a method that is based of the programming concept of 'lazy evaluation'. The concept is basically that an evaluation of an experssion doesn't corru until it's value is needed. What this means for Ruby is that you can take a range of (1..Float::INFINITY) and add an additional method to evaluate some of the values. For example:
       </p>
 
-     <p class="code">5.times do
-          array = []
-         (1..Float::INFINITY).lazy.each do |x|
-           array << (x + 2)
-         end
+     <p class="code">
+      5.times do
+        array = []
+        (1..Float::INFINITY).lazy.each do |x|
+          array << (x + 2)
         end
+      end
       </p>
     <p>
       if the lazy method wasn't added to the expression, then the range would be evaluated immediately and cause your program to crash.
@@ -47,18 +48,22 @@
 
       <p>Example 1:</p>
 
-    <p class="code">array = [1,2,3,4,5,6]
-         array.reduce(:+)
-         => 21 which is the sum of 1+2+3+4+5+6
+    <p class="code">
+      array = [1,2,3,4,5,6]
+        array.reduce(:+)
+      => 21 which is the sum of 1+2+3+4+5+6
+
         array.reduce(:*)
-         => 720 which is the product of 1+2+3+4+5+6
+      => 720 which is the product of 1+2+3+4+5+6
       </p>
 
       <p>Example 2:</p>
-      <p class="code">(1..5).reduce(:+)
-        => 15 which is the sum of 1+2+3+4+5
-         (1..5).reduce(:*)
-        => 120 which is the product of 1+2+3+4+5
+      <p class="code">
+        (1..5).reduce(:+)
+      => 15 which is the sum of 1+2+3+4+5
+
+        (1..5).reduce(:*)
+      => 120 which is the product of 1+2+3+4+5
       </p>
 
       <p>In summary, .reduce allows you to perform a mathematical operation quickly on your enumerable.
@@ -71,17 +76,21 @@
 
       <p>Example 1:</p>
 
-    <p class="code">array = [1,2,3,4,5,6]
-         array.select {|e| e.even? }
-         => [2,4,6]
-         Note that this method is not destructive, which means that if you call your array variable in ruby, it will still return the original array. Using ".select!" however will transform your existing variable into whatever the code block inside the curly brackets returns. So in this example array will now equal [2,4,6], since that's the code you had inside your curly brackets.
+    <p class="code">
+      array = [1,2,3,4,5,6]
+        array.select {|e| e.even? }
+      => [2,4,6]</p>
+    <p>
+       Note that this method is not destructive, which means that if you call your array variable in ruby, it will still return the original array. Using ".select!" however will transform your existing variable into whatever the code block inside the curly brackets returns. So in this example array will now equal [2,4,6], since that's the code you had inside your curly brackets.
       </p>
 
       <p>Example 2:</p>
-      <p class="code">array = ["Eric", "Ross", "Imaginary Friend"]
+      <p class="code">
+        array = ["Eric", "Ross", "Imaginary Friend"]
         array.select {|e| e.include?("Ross")}
         =>
-        ["Ross"]
+        ["Ross"]</p>
+      <p>
         Note that this method is not destructive, which means that if you call your array variable, it will still return an array with three strings. Using ".select!" however will transform your existing variable into whatever the code block inside the curly brackets returns. So in this example array will now equal ["Ross"].
       </p>
 

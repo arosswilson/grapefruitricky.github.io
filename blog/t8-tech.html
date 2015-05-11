@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ross reckons</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body id="background" >
+  <div id="topfixed">
+    <div>
+    <h1>Ross Reckons</h1>
+  </div>
+   <a href="https://twitter.com/rosswilsoniii"><img id="twitter" class="social" src="../imgs/twitter.png" alt="twitter"></a>
+   <a href="https://www.linkedin.com/pub/ross-wilson/35/306/b38"><img id="linkedin" class="social" src="../imgs/linkedin.png" alt="linkedin"></a>
+   <a href="mailto:arthur.ross.wilson@gmail.com"><img id="mail" class="social" src="../imgs/mail.png" alt="email"></a>
+  </div>
+  <div id="divone">
+   <img id="reckons" src="../imgs/surf1.jpg" alt="ross recksons">
+
+
+    <a class="nav" href="../index.html">home</a>
+    <a class="nav" href="#">about me</a>
+    <a class="nav" href="#">projects</a>
+
+  </div>
+  <br><br><br><br><br><br><br>
+
+  <section id="post">
+  <h1 class="maintext">Active Directory</h1>
+  <h2 class="maintext">I'm going to take a shot at expalining it.</h2>
+  <h4 class="maintext">May 10, 2015</h4>
+
+
+    <p class="maintext">
+      Today I want to discuss take a shot at explaining "active record". I have heard this term a lot and never really understood it, so it will be helpful for me to try to research and explain it to you. When I google "what is active record" (this is how I start all research nowadays) and it returned a definition from Wikipedia that says "In software engineering, the active record pattern is an architectural pattern found in software that stores in-memory object data in relational databases. It was named by Martin Fowler in his 2003 book Patterns of Enterprise Application Architecture." ...What? Let's see if I can break this down a little.<br>
+      First, let's start by defining a relational database. A relational database is one where a table represents an entity and each row represents a seperate instance of that entity. The columns contain certain values for each instance. For example, you could have a table for fruit and each row would be a kind of fruit. Then each column could have different attributes about the fruits, like size, color, taste, etc.<br>
+      Cool, hopefully that makes sense. So, back to the original definition, we now know that active record is concept that stores objects in these databases. Since I'm learning about Ruby on Rails, we'll focus on that as the software. Let's break Ruby on Rails down a little bit, because a lot of peple think Ruby on Rails is one thing, but that's not true. Ruby is an object orient programming language. This is probably what you think of when you think of Ruby on Rails. The Rails part is actually a framework that gives the structure for web pages, services provided on that site, and databases. To go back to the definition, Rails is the framework that uses Active Record to story Ruby objects in relational databases. So since the Rails framework adopts the active record concept, that means classes that are created in Ruby, will typically have a corresponding table, and each instance of that class will it a row on that table. This streamlines the information management on a web app and allows you to quickly store and access information.<br>
+      Let me know if you have any feedback by using those links in the top corner!
+
+    </p>
+  </section>
+
+  <section id="blogs">
+   <p id="archive"> Archive</p>
+   <ul>
+    <li><a href="t1-git-blog.html">Git It?!</a></li>
+    <li><a href="c1-chefs-kitchen.html">Hungry</a></li>
+    <li><a href="t2-css-design.html">Inline vs. Inline-Block</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+    <li><a href="c3_thinking-style.html">What Am I Thinking?</a></li>
+    <li><a href="t4-enumerable-methods.html">Droppin' Knowledge on the Cycle Method</a></li>
+    <li><a href="c4-tech-issues.html">Healthcare Interoperability</a></li>
+    <li><a href="t5-ruby-classes.html">A Look at Classes in Ruby</li>
+    <li><a href="c5-feedback.html">Oh, no! Feedback!</li>
+   </ul>
+  </section>
+</body>
+</html>
